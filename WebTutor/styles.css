@@ -12,9 +12,6 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
-ul{
-    list-style-type: none;
-}
 
 a {
     color: #FAF5A5;
@@ -80,6 +77,10 @@ input {
     text-align: center;
 }
 
+.menu-style{
+    list-style-type: none;
+    margin: 0 30% 0 30%;
+}
 footer{
     text-align: center;
     bottom: 0;
