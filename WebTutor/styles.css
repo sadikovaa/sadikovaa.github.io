@@ -81,6 +81,11 @@ input {
     list-style-type: none;
     margin: 0 30% 0 30%;
 }
+
+.explanation{
+    font-style: italic;
+    text-align: right;
+}
 footer{
     text-align: center;
     bottom: 0;
