@@ -72,6 +72,10 @@ input {
     background-color: #FFFFFF;
 }
 
+.header-style{
+    text-align: center;
+}
+
 footer{
     bottom: 0;
 }
