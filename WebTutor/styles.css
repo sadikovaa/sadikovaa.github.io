@@ -31,7 +31,7 @@ input {
     width:50%;
     padding:10px;
     border-radius:10px;
-    border: 1px solid #eee;
+    border: 1px solid #FFF;
     transition: .3s border-color ;
 }
 
@@ -42,15 +42,29 @@ input {
     width:70%;
     padding:10px;
     border-radius:10px;
-    border: 1px solid #eee;
+    border: 1px solid #FFF;
     transition: .3s border-color ;
 }
 .type-3 {
     border-radius:10px;
-    border: 1px solid #eee;
+    border: 1px solid #FFF;
     transition: .3s border-color;
 }
 
+.image-radius {
+    margin: 0px 15px 5px 0px;
+    border-radius: 10px;
+    border: 5px solid #FFF;
+    box-shadow: 2px 1px 5px #999999;
+}
+
+.code-style{
+    width: max-content;
+    color: #B3AD4D;
+    padding:10px;
+    border-radius:10px;
+    background-color: #FFFFFF;
+}
 
 footer{
     bottom: 0;
