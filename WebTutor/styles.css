@@ -7,7 +7,7 @@ body {
     margin-right: 200px;
     color: #FFFF;
     background-color: #6FA8BD;
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", sans-serif;
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -76,6 +76,10 @@ input {
 }
 
 .header-style{
+    text-align: center;
+}
+
+.heading-style{
     text-align: center;
 }
 
