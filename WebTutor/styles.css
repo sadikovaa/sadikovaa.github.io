@@ -7,7 +7,7 @@ body {
     margin-right: 200px;
     color: #FFFF;
     background-color: #6FA8BD;
-    font-family: "Century Gothic", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
