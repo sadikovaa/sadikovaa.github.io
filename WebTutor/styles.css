@@ -13,6 +13,7 @@ body {
     grid-template-rows: auto 1fr auto;
     letter-spacing: normal;
     text-indent: 0;
+    text-transform: none;
 }
 
 a {
@@ -79,6 +80,7 @@ input {
 
 .header-style{
     text-align: center;
+    text-decoration: none;
 }
 
 .heading-style{
