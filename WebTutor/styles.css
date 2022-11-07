@@ -3,16 +3,12 @@ html{
 }
 
 body {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
     color: #FFFF;
     background-color: #6FA8BD;
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
-    grid-template-rows: auto 1fr auto;
-    letter-spacing: normal;
-    text-indent: 0;
-    text-transform: none;
     display: flex;
     flex-direction: column;
 }
@@ -80,6 +76,7 @@ input {
 }
 
 .header-style{
+    font-size: 1vw;
     text-align: center;
     text-decoration: none;
 }
