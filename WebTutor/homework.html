@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Web-tutor/Домашнее задание</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <header align="center">
+  <header class="header-style">
           <pre>
 ██╗    ██╗███████╗██████╗     ████████╗██╗   ██╗████████╗ ██████╗ ██████╗
  ██║    ██║██╔════╝██╔══██╗    ╚══██╔══╝██║   ██║╚══██╔══╝██╔═══██╗██╔══██╗
@@ -17,21 +19,23 @@
       <hr>
   </header>
   <main>
-      <h1 align="center">
+      <h1 class="heading-style">
           Домашнее задание <br>
       </h1>
-      <h3 align="center">
+      <h3 class="heading-style">
           Пишите вопросы по заданиям!
       </h3>
      <form action="">
-      Email:    <input type="text" name="email"><br><br>
-      Вопрос:   <input type="text" name="question"><br><br>
-      <input type="submit" value="Отправить">
+         <div>
+              Email:    <input type="text" class="type-1" name="email"><br><br>
+              Вопрос:   <br><textarea type="text" class="type-2" name="question"></textarea><br><br>
+              <input type="submit" class="type-3" value="Отправить">
+         </div>
     </form>
   </main>
   <footer>
     <hr>
-    <p align="center">
+    <p>
       Ничем не спонсированно, кроме веры в стипендию
     </p>
   </footer>

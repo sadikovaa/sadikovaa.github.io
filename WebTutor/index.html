@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="репетитор, уроки, школа, гдз, конспекты, лекции">
     <title>Web-tutor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
 </head>
 <body>
-    <header align="center">
+    <header class="header-style">
         <pre>
 ██╗    ██╗███████╗██████╗     ████████╗██╗   ██╗████████╗ ██████╗ ██████╗
  ██║    ██║██╔════╝██╔══██╗    ╚══██╔══╝██║   ██║╚══██╔══╝██╔═══██╗██╔══██╗
@@ -22,9 +25,14 @@
     </header>
 
     <main>
-        <nav align="center">
-            <ul>
-            <li><a href="maths.html" target="_self">Математика</a></li>
+        <nav>
+            <ul  class="menu-style">
+            <li>
+                <details>
+                    <summary>Математика</summary>
+                    <a href="maths.html" target="_self">Делители и кратные</a>
+                </details>
+            </li>
             <li><a href="homework.html" target="_self">Домашнее задание</a></li>
             </ul>
         </nav>
@@ -32,7 +40,7 @@
 
     <footer>
         <hr>
-        <p align="center">
+        <p>
             Ничем не спонсированно, кроме веры в стипендию
         </p>
     </footer>
