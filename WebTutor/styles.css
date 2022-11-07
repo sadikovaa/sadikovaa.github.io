@@ -143,6 +143,9 @@ input {
 }
 
 footer{
+    font-size: 1vw;
+    width: 80%;
+    position: absolute;
     text-align: center;
     bottom: 0;
 }
