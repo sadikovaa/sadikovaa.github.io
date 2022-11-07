@@ -9,14 +9,14 @@ body {
     color: #FFFF;
     background-color: #6FA8BD;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
+    height: 95%;
     display: flex;
     flex-direction: column;
 }
 
 .all-info{
     position: relative;
-    min-height: 85%;
+    min-height: 100%;
 }
 a {
     color: #FAF5A5;
@@ -94,6 +94,7 @@ input {
     font-size: 1vw;
     text-align: center;
     text-decoration: none;
+    /*position: absolute;*/
 }
 
 .heading-style{
@@ -150,7 +151,6 @@ input {
 footer{
     font-size: 1vw;
     width: 100%;
-    position: relative;
     text-align: center;
     bottom: 0;
 }
