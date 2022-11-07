@@ -9,11 +9,12 @@ body {
     background-color: #6FA8BD;
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
-    display: grid;
     grid-template-rows: auto 1fr auto;
     letter-spacing: normal;
     text-indent: 0;
     text-transform: none;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
