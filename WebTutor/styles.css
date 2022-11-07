@@ -147,7 +147,11 @@ input {
         background: #B3AD4D
     }
 }
-
+.position-absolute{
+    color: #FA708DA0;
+    position: absolute;
+    text-align: center;
+}
 footer{
     font-size: 1vw;
     width: 100%;
