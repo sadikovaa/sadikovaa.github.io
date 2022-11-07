@@ -9,11 +9,15 @@ body {
     color: #FFFF;
     background-color: #6FA8BD;
     font-family: 'Open Sans', sans-serif;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
+.all-info{
+    position: relative;
+    min-height: 85%;
+}
 a {
     color: #FAF5A5;
 }
@@ -145,8 +149,8 @@ input {
 
 footer{
     font-size: 1vw;
-    width: 80%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     text-align: center;
     bottom: 0;
 }
