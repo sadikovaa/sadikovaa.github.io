@@ -113,6 +113,15 @@ input {
     grid-row: auto;
 }
 
+th{
+    background: #FA708D
+}
+tr:nth-child(even) td {
+    background: #FAF5A5;
+    color: #6FA8BD
+}
+tr:nth-child(odd) td {background: #B3AD4D}
+
 footer{
     text-align: center;
     bottom: 0;
