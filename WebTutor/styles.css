@@ -100,6 +100,23 @@ input {
 }
 
 .menu-style{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.menu-style :hover {
+    color: #B3AD4D;
+}
+
+.menu-item{
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    margin: 0 10px 0;
+
+}
+
+.notes-style{
     list-style-type: none;
     margin: 0 30% 0 20%;
 }

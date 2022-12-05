@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="репетитор, уроки, школа, гдз, конспекты, лекции">
     <script src="script/load-time.js"></script>
+    <script src="script/menu-nav.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-tutor</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -31,16 +32,16 @@
     </header>
 
     <main>
+        <nav class="menu-style" id="nav-highlight" >
+            <a class="menu-item" href="index.html" target="_self">Конспекты</a>
+            <a class="menu-item" href="homework.html" target="_self">Домашнее задание</a>
+        </nav>
+        <hr>
         <nav>
-            <ul  class="menu-style">
-            <li>
-                <details>
-                    <summary>Математика</summary>
-                    <a href="maths.html" target="_self">Делители и кратные</a>
-                </details>
-            </li>
-            <li><a href="homework.html" target="_self">Домашнее задание</a></li>
-            </ul>
+            <details>
+                <summary>Математика</summary>
+                <a href="maths.html" target="_self">Делители и кратные</a>
+            </details>
         </nav>
 
         <section class="gallery-container">
