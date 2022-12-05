@@ -125,27 +125,33 @@ input {
     font-style: italic;
     text-align: right;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 660px) {
     table {
         display: none;
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 660px) {
     table {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);;
         padding: 10px;
         align-items: center;
 
     }
-
     .table-item {
-        border: 1px solid #FAF5A5;
+        border: 1px solid #FFFFFF;
         padding: 10px;
         font-size: 15px;
         text-align: center;
+        margin: 1px;
+    }
+
+    thead,
+    tbody,
+    tr {
+        display: contents;
     }
 
     th {
