@@ -173,33 +173,41 @@ input {
     text-align: center;
 }
 
-.gallery-container {
-    padding-top: 100px;
-    text-align: center;
+@media screen and (max-width: 660px) {
+    .gallery-container{
+        display: none;
+    }
 }
+@media screen and (min-width: 450px) {
+    .gallery-container {
+        padding-top: 100px;
+        text-align: center;
+    }
 
-.gallery-header {
-    font-size: 18px;
-    text-align: center;
-}
+    .gallery-header {
+        font-size: 18px;
+        text-align: center;
+    }
 
-.images-container {
-    display: inline-block;
-    width: 70%;
-    overflow-x: scroll;
-    white-space:nowrap;
-}
+    .images-container {
+        display: inline-block;
+        width: 80%;
+        overflow-x: scroll;
+        white-space:nowrap;
+        min-width: 350px;
+    }
 
-.image-container {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 20px 20px;
+    .image-container {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 20px 20px;
+    }
 }
 
 .image {
     padding: 10px;
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 350px;
+    max-width: 350px;
 }
 
 footer{
