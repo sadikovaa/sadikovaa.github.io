@@ -1,8 +1,3 @@
-
-const pageMap = {
-    'index2.html': 'second-page-nav',
-    'index.html': 'main-page-nav',
-};
 document.addEventListener('DOMContentLoaded', _ => {
 
     const nav = document.getElementById('nav-highlight');
