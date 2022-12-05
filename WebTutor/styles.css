@@ -108,19 +108,20 @@ input {
     font-style: italic;
     text-align: right;
 }
-
 @media screen and (max-width: 500px) {
-    .table-container {
+    table {
         display: none;
     }
 }
+
 @media screen and (min-width: 500px) {
-    .table-container {
-        align-items: center;
+    table {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        display: grid;
         padding: 10px;
+        align-items: center;
+
     }
 
     .table-item {
@@ -128,8 +129,6 @@ input {
         padding: 10px;
         font-size: 15px;
         text-align: center;
-        grid-column: auto;
-        grid-row: auto;
     }
 
     th {
