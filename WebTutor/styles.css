@@ -113,7 +113,14 @@ input {
     text-align: center;
     border: 1px solid #FFFFFF;
     margin: 0 10px 0;
+}
 
+.selected-item{
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    margin: 0 10px 0;
+    background-color: #FFFFFF;
+    color: #B3AD4D;
 }
 
 .notes-style{
@@ -180,6 +187,7 @@ input {
 }
 @media screen and (min-width: 450px) {
     .gallery-container {
+        justify-content: center;
         padding-top: 100px;
         text-align: center;
     }
@@ -189,8 +197,9 @@ input {
         text-align: center;
     }
 
-    .images-container {
-        display: inline-block;
+    .gallery-flex {
+        display: flex;
+        flex-direction: row;
         width: 80%;
         overflow-x: scroll;
         white-space:nowrap;
@@ -198,8 +207,7 @@ input {
     }
 
     .image-container {
-        display: inline-block;
-        vertical-align: middle;
+        flex: 1;
         padding: 20px 20px;
     }
 }
