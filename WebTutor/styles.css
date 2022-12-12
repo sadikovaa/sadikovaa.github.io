@@ -181,16 +181,27 @@ input {
 }
 
 @media screen and (max-width: 660px) {
-    .gallery-container{
-        display: none;
+    .gallery-flex {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        overflow-x: scroll;
+        white-space:nowrap;
+        min-width: 350px;
     }
 }
+
+.gallery-container {
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px 20px;
+}
 @media screen and (min-width: 450px) {
-    .gallery-container {
-        justify-content: center;
-        padding-top: 100px;
-        text-align: center;
-    }
 
     .gallery-header {
         font-size: 18px;
@@ -206,10 +217,7 @@ input {
         min-width: 350px;
     }
 
-    .image-container {
-        flex: 1;
-        padding: 20px 20px;
-    }
+
 }
 
 .image {
