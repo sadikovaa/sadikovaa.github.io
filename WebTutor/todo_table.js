@@ -1,6 +1,8 @@
 const taskList = document.getElementsByClassName("form_task")[0];
 const taskInput = document.getElementsByClassName("form_to_create")[0];
 const template = document.getElementById("template");
+const spinner = document.getElementById("spinner");
+spinner.style.display = "none";
 let taskArray = [];
 id = 0;
 getFromStorage();
@@ -22,8 +24,17 @@ taskInput.addEventListener("submit", function (e){
     }
 });
 
+function getTodayTasks() {
+    spinner.style.display = "initial";
+    fetch('https://my-json-server.typicode.com/sadikovaa/test-data/tasks')
+        .then(response => response.json())
+        .then(data => displayTaskList(taskArray = taskArray.concat(data)));
+    spinner.style.display = "none";
+}
+
 function setTaskInStorages(taskArray){
     localStorage.setItem('listTodo', JSON.stringify(taskArray));
+    console.log(JSON.stringify(taskArray))
     displayTaskList(taskArray);
 }
 

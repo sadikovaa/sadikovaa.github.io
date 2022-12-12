@@ -31,12 +31,16 @@
 
   <article>
     <form class="form_to_create">
-      <label class="form_input-label">Создать новую цель:</label>
-      <input name="task" type="text" size="30" class="type-3" placeholder="Цель">
-      <input type="submit" class="submit_button">
+        <label class="form_input-label">Создать новую цель:</label>
+        <input name="task" type="text" size="30" class="type-3" placeholder="Цель">
+        <input type="submit" class="submit_button">
+        <button class="cbutton" onclick="getTodayTasks()">Получить цели</button>
     </form>
     <br><br>
-    <div class="form_task">
+
+    <div class="loading" id="spinner"></div>
+
+      <div class="form_task">
       <template id="template">
           <div class="list_item">
               <input type="checkbox" class="checkbox">
@@ -45,7 +49,9 @@
           </div>
       </template>
     </div>
-    <button class="clear_button" onclick="clearStorage()">Удалить все</button>
+    <button class="cbutton" onclick="clearStorage()">Удалить все</button>
+
+
   </article>
 
 </main>
