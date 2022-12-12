@@ -3,6 +3,7 @@ const taskInput = document.getElementsByClassName("form_to_create")[0];
 const template = document.getElementById("template");
 let taskArray = [];
 id = 0;
+getFromStorage();
 
 taskInput.addEventListener("submit", function (e){
     e.preventDefault();
@@ -12,8 +13,9 @@ taskInput.addEventListener("submit", function (e){
         const task = {
             task: formData.get("task"),
             isChecked: false,
-            id: id++,
+            id: Date.now().toString()+ id,
         };
+        id++;
         taskArray.push(task);
         taskInput.reset();
         setTaskInStorages(taskArray);
@@ -21,12 +23,12 @@ taskInput.addEventListener("submit", function (e){
 });
 
 function setTaskInStorages(taskArray){
-    localStorage.setItem("listTodo", JSON.stringify(taskArray));
+    localStorage.setItem('listTodo', JSON.stringify(taskArray));
     displayTaskList(taskArray);
 }
 
 function getFromStorage(){
-    const ref = localStorage.getItem("listTodo");
+    const ref = localStorage.getItem('listTodo');
     if (ref){
         taskArray = JSON.parse(ref);
         displayTaskList(taskArray);
@@ -34,7 +36,7 @@ function getFromStorage(){
 }
 
 function clearStorage(){
-    localStorage.removeItem("listTodo");
+    localStorage.removeItem('listTodo');
     taskArray.splice(0, taskArray.length);
     displayTaskList(taskArray);
 }
@@ -53,15 +55,6 @@ function displayTaskList(taskArray){
     })
 }
 
-function CheckItem(id){
-    for (let i = 0; i < taskArray.length; i++){
-        if (taskArray[i].id === id){
-            taskArray[i].isChecked = !taskArray[i].isChecked;
-        }
-    }
-    setTaskInStorages(taskArray);
-}
-
 function deleteTask(id){
     taskArray = taskArray.filter(function (task) {
         return task.id !== id;
@@ -69,7 +62,16 @@ function deleteTask(id){
     setTaskInStorages(taskArray);
 }
 
-getFromStorage();
+function CheckItem(id){
+    console.log(taskArray);
+    for (let i = 0; i < taskArray.length; i++){
+        if (taskArray[i].id == id){
+            taskArray[i].isChecked = !taskArray[i].isChecked;
+            console.log(taskArray[i]);
+        }
+    }
+    setTaskInStorages(taskArray);
+}
 
 taskList.addEventListener('click', (event) => {
     const isButton = event.target.classList.contains("delete_button");
