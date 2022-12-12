@@ -1,0 +1,62 @@
+.form_to_create{
+    display: inline;
+}
+
+.checkbox{
+    display: inline-block;
+}
+
+.list_item{
+
+}
+
+.delete_button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.cbutton{
+    border-radius:10px;
+    border: 1px solid #FFF;
+    transition: .3s border-color;
+    text-align: right;
+}
+
+.submit_button{
+    border-radius:10px;
+    border: 1px solid #FFF;
+    transition: .3s border-color;
+    display: inline;
+}
+
+input[type=checkbox]:checked + span{
+    text-decoration: line-through;
+}
+
+
+
+
+h1 {
+    font: 2em 'Roboto', sans-serif;
+    margin-bottom: 40px;
+}
+
+.loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
