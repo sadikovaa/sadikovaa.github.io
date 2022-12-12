@@ -1,0 +1,36 @@
+.form_to_create{
+    display: inline;
+}
+
+.checkbox{
+    display: inline-block;
+}
+
+.list_item{
+
+}
+
+.delete_button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.clear_button{
+    border-radius:10px;
+    border: 1px solid #FFF;
+    transition: .3s border-color;
+    text-align: right;
+}
+
+.submit_button{
+    border-radius:10px;
+    border: 1px solid #FFF;
+    transition: .3s border-color;
+    display: inline;
+}
+
+input[type=checkbox]:checked + span{
+    text-decoration: line-through;
+}

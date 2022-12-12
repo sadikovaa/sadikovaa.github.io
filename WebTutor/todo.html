@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Web-tutor/Домашнее задание</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="todo_styles.css" rel="stylesheet">
+  <script defer src="todo_table.js"></script>
+
+</head>
+<body>
+<header class="header-style">
+          <pre>
+██╗    ██╗███████╗██████╗     ████████╗██╗   ██╗████████╗ ██████╗ ██████╗
+ ██║    ██║██╔════╝██╔══██╗    ╚══██╔══╝██║   ██║╚══██╔══╝██╔═══██╗██╔══██╗
+ ██║ █╗ ██║█████╗  ██████╔╝       ██║   ██║   ██║   ██║   ██║   ██║██████╔╝
+ ██║███╗██║██╔══╝  ██╔══██╗       ██║   ██║   ██║   ██║   ██║   ██║██╔══██╗
+ ╚███╔███╔╝███████╗██████╔╝       ██║   ╚██████╔╝   ██║   ╚██████╔╝██║  ██║
+  ╚══╝╚══╝ ╚══════╝╚═════╝        ╚═╝    ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+          </pre>
+  <hr>
+</header>
+<main>
+  <h1 class="heading-style">
+    Трекер задач <br>
+  </h1>
+  <h3 class="heading-style">
+    Поставьте цели в обучении!
+  </h3>
+
+  <article>
+    <form class="form_to_create">
+      <label class="form_input-label">Создать новую цель:</label>
+      <input name="task" type="text" size="30" class="type-3" placeholder="Цель">
+      <input type="submit" class="submit_button">
+    </form>
+    <br><br>
+    <div class="form_task">
+      <template id="template">
+          <div class="list_item">
+              <input type="checkbox" class="checkbox">
+              <span></span>
+              <button class="delete_button">✕</button>
+          </div>
+      </template>
+    </div>
+    <button class="clear_button" onclick="clearStorage()">Удалить все</button>
+  </article>
+
+</main>
+<footer>
+  <hr>
+  <p>
+    Ничем не спонсированно, кроме веры в стипендию
+  </p>
+</footer>
+</body>
+</html>
