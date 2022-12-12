@@ -73,6 +73,31 @@ function CheckItem(id){
     setTaskInStorages(taskArray);
 }
 
+function smartCheckItem(id){
+    let arr = []
+    for (let i = 0; i < taskArray.length; i++){
+        if (taskArray[i].id == id){
+            if (taskArray[i].isChecked == false){
+                arr = taskArray.slice();
+                arr[i].isChecked = true;
+                let tmp = arr[i];
+                arr[i] = arr[taskArray.length - 1];
+                arr[taskArray.length - 1] = tmp;
+            }
+            else{
+                arr = taskArray.slice();
+                arr[i].isChecked = false;
+                let tmp = arr[i];
+                arr[i] = arr[0];
+                arr[0] = tmp;
+            }
+            console.log(taskArray[i]);
+        }
+    }
+    taskArray = arr.slice();
+    setTaskInStorages(taskArray);
+}
+
 taskList.addEventListener('click', (event) => {
     const isButton = event.target.classList.contains("delete_button");
     const isCheckBox = event.target.classList.contains("checkbox");
@@ -80,6 +105,6 @@ taskList.addEventListener('click', (event) => {
         deleteTask(event.target.parentElement.id);
     }
     if(isCheckBox){
-        CheckItem(event.target.parentElement.id)
+        smartCheckItem(event.target.parentElement.id)
     }
 })
