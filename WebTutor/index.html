@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="репетитор, уроки, школа, гдз, конспекты, лекции">
+    <script src="script/load-time.js"></script>
+    <script src="script/menu-nav.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-tutor</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 
 </head>
 <body>
+<div class="position-absolute">
+    А это сделанно для позишн: абсолюте:)
+</div>
+<div class="all-info">
     <header class="header-style">
         <pre>
 ██╗    ██╗███████╗██████╗     ████████╗██╗   ██╗████████╗ ██████╗ ██████╗
@@ -25,24 +32,45 @@
     </header>
 
     <main>
-        <nav>
-            <ul  class="menu-style">
-            <li>
-                <details>
-                    <summary>Математика</summary>
-                    <a href="maths.html" target="_self">Делители и кратные</a>
-                </details>
-            </li>
-            <li><a href="homework.html" target="_self">Домашнее задание</a></li>
-            </ul>
+        <nav class="menu-style" id="nav-highlight" >
+            <a class="menu-item" href="index.html" target="_self">Конспекты</a>
+            <a class="menu-item" href="homework.html" target="_self">Домашнее задание</a>
         </nav>
+        <hr>
+        <nav>
+            <details>
+                <summary>Математика</summary>
+                <a href="maths.html" target="_self">Делители и кратные</a>
+            </details>
+        </nav>
+
+        <section class="gallery-container">
+            <h3 class="gallery-header">Интересные задачки на сегодня</h3>
+            <div class="gallery-flex">
+                <div class="image-container">
+                    <img class="image" src="img/task1.jpg">
+                </div>
+                <div class="image-container">
+                    <img class="image" src="img/task2.jpg">
+                </div>
+                <div class="image-container">
+                    <img class="image" src="img/task3.jpg">
+                </div>
+                <div class="image-container">
+                    <img class="image" src="img/task4.png">
+                </div>
+            </div>
+        </section>
+
     </main>
+</div>
 
     <footer>
         <hr>
         <p>
             Ничем не спонсированно, кроме веры в стипендию
         </p>
+        <p id="load-time"></p>
     </footer>
 </body>
 </html>
