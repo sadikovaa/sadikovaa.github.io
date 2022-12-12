@@ -25,11 +25,11 @@ taskInput.addEventListener("submit", function (e){
 });
 
 function getTodayTasks() {
-    spinner.style.display = "initial";
+    spinner.style.display = "unset";
     fetch('https://my-json-server.typicode.com/sadikovaa/test-data/tasks')
         .then(response => response.json())
-        .then(data => displayTaskList(taskArray = taskArray.concat(data)));
-    spinner.style.display = "none";
+        .then(data => displayTaskList(taskArray = taskArray.concat(data)))
+        .finally(() =>  spinner.style.display = "none");
 }
 
 function setTaskInStorages(taskArray){
