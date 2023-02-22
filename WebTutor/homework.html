@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Web-tutor/Домашнее задание</title>
+    <script src="script/load-time.js"></script>
+    <script src="script/menu-nav.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+<div class="all-info">
   <header class="header-style">
           <pre>
 ██╗    ██╗███████╗██████╗     ████████╗██╗   ██╗████████╗ ██████╗ ██████╗
@@ -19,6 +23,11 @@
       <hr>
   </header>
   <main>
+      <nav class="menu-style" id="nav-highlight">
+          <a class="menu-item" href="index.html" target="_self">Конспекты</a>
+          <a class="menu-item" href="homework.html" target="_self">Домашнее задание</a>
+      </nav>
+      <hr>
       <h1 class="heading-style">
           Домашнее задание <br>
       </h1>
@@ -33,11 +42,13 @@
          </div>
     </form>
   </main>
+</div>
   <footer>
     <hr>
-    <p>
-      Ничем не спонсированно, кроме веры в стипендию
-    </p>
+      <p>
+          Ничем не спонсированно, кроме веры в стипендию
+        </p>
+      <p id="load-time"></p>
   </footer>
 </body>
 </html>

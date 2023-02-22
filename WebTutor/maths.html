@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Web-tutor/Математика</title>
+    <script src="script/load-time.js"></script>
+    <script src="script/menu-nav.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+<div class="all-info">
     <header class="header-style">
         <pre>
 ██╗    ██╗███████╗██████╗     ████████╗██╗   ██╗████████╗ ██████╗ ██████╗
@@ -20,6 +24,11 @@
     </header>
 
     <main>
+        <nav class="menu-style" id="nav-highlight">
+            <a class="menu-item" href="index.html" target="_self">Конспекты</a>
+            <a class="menu-item" href="homework.html" target="_self">Домашнее задание</a>
+        </nav>
+        <hr>
         <h1 class="heading-style">
             Математика <br>
             <small><small>6 класс</small></small>
@@ -129,14 +138,69 @@
             <p class = "explanation">
                 Текст взят с сайта <a href="https://interneturok.ru/" target="_blank">interneturok.ru</a>
             </p>
+            <section>
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="table-item">угол, α</th>
+                        <th class="table-item">0°</th>
+                        <th class="table-item">30°</th>
+                        <th class="table-item">45°</th>
+                        <th class="table-item">60°</th>
+                        <th class="table-item">90°</th>
+                        <th class="table-item">180°</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th class="table-item">sin α</th>
+                        <td class="table-item">0</td>
+                        <td class="table-item">1/2</td>
+                        <td class="table-item">1/√2</td>
+                        <td class="table-item">√3/2</td>
+                        <td class="table-item">1</td>
+                        <td class="table-item">0</td>
+                    </tr>
+                    <tr>
+                        <th class="table-item">cos α</th>
+                        <td class="table-item">1</td>
+                        <td class="table-item">√3/2</td>
+                        <td class="table-item">1/√2</td>
+                        <td class="table-item">1/2</td>
+                        <td class="table-item">0</td>
+                        <td class="table-item">-1</td>
+                    </tr>
+                    <tr>
+                        <th class="table-item">tg α</th>
+                        <td class="table-item">0</td>
+                        <td class="table-item">√3/3</td>
+                        <td class="table-item">1</td>
+                        <td class="table-item">√3</td>
+                        <td class="table-item">-</td>
+                        <td class="table-item">0</td>
+
+                    </tr>
+                    <tr>
+                        <th class="table-item">ctg α</th>
+                        <td class="table-item">-</td>
+                        <td class="table-item">√3</td>
+                        <td class="table-item">1</td>
+                        <td class="table-item">√3/3</td>
+                        <td class="table-item">0</td>
+                        <td class="table-item">-</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
         </article>
     </main>
-
+</div>
     <footer>
         <hr>
-        <p>
-            Ничем не спонсированно, кроме веры в стипендию
-        </p>
+            <p>
+                Ничем не спонсированно, кроме веры в стипендию
+            </p>
+            <p id="load-time"></p>
     </footer>
 </body>
 </html>
